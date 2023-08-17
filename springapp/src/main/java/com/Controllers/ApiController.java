@@ -8,12 +8,11 @@ public class ApiController {
 
     @GetMapping("/")
     public String Welcome() {
-        return "Welcome Spring Boot!";
+        return "welcome";
     }
-    
     public static void main(String args[])
     {
-        ApiController a=new ApiController();
-        System.out.println(a.Welcome);
+        ApiController api=new ApiController();
+        System.out.print(api.Welcome());
     }
 }
