@@ -11,12 +11,9 @@ public class ApiController {
         return "Welcome Spring Boot!";
     }
     
-}
-public static void main(String args[])
-{
-    ApiController a=new ApiController();
-    extracted(a);
-}
-private static void extracted(ApiController a) {
-    System.out.println(a.Welcome());
+    public static void main(String args[])
+    {
+        ApiController a=new ApiController();
+        System.out.println(a.Welcome);
+    }
 }
